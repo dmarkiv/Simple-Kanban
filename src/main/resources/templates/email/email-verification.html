@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>Hi, <span th:text="${receiverName}"></span> to complete registration, please, verify you email using this <a
+       th:href="${verificationLink}">link</a></p>
+<p>
+    Regards, <br/>
+    <em>Simple Kanban team</em>
+</p>
+</body>
+</html>
